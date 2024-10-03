@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+}
+
+/* Header */
+header {
+    background-color: #FFA500; /* Naranja */
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    width: 40%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.user-options a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cart::after {
+    content: '🛒';
+    margin-left: 5px;
+}
+
+/* Banner principal */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcccc;
+    padding: 50px;
+}
+
+/* Estilos de productos */
+main h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #e60000;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #999;
+}
+
+.discount {
+    color: #ff6600;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.sales {
+    font-size: 14px;
+    color: #666;
+}
+
+.rating {
+    color: #ffd700;
+    font-size: 14px;
+}
